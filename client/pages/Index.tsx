@@ -44,11 +44,14 @@ export default function Index() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Transform Your Business with <span className="gradient-text">AI Power</span>
+              Transform Your Business with{" "}
+              <span className="gradient-text">AI Power</span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-              Automate customer conversations, capture leads 24/7, and unlock business insights with intelligent AI solutions designed for Canadian businesses.
+              Automate customer conversations, capture leads 24/7, and unlock
+              business insights with intelligent AI solutions designed for
+              Canadian businesses.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -61,7 +64,10 @@ export default function Index() {
                 Get a Free AI Demo
                 <ArrowRight size={18} className="ml-2" />
               </button>
-              <a href="#how-it-works" className="btn-secondary inline-flex items-center justify-center">
+              <a
+                href="#how-it-works"
+                className="btn-secondary inline-flex items-center justify-center"
+              >
                 See How It Works
               </a>
             </div>
@@ -69,11 +75,15 @@ export default function Index() {
             {/* Hero Stats */}
             <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto">
               <div className="glass-effect p-4 rounded-xl">
-                <p className="text-2xl md:text-3xl font-bold text-cyan-400">24/7</p>
+                <p className="text-2xl md:text-3xl font-bold text-cyan-400">
+                  24/7
+                </p>
                 <p className="text-gray-400 text-sm">AI Support</p>
               </div>
               <div className="glass-effect p-4 rounded-xl">
-                <p className="text-2xl md:text-3xl font-bold text-cyan-400">95%</p>
+                <p className="text-2xl md:text-3xl font-bold text-cyan-400">
+                  95%
+                </p>
                 <p className="text-gray-400 text-sm">Lead Capture</p>
               </div>
               <div className="glass-effect p-4 rounded-xl">
@@ -95,15 +105,17 @@ export default function Index() {
               About Us
             </h2>
             <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-              We're an AI solutions agency dedicated to helping Canadian businesses
-              harness the power of artificial intelligence. We don't just build AI
-              systems—we build <span className="text-cyan-400">growth engines</span>.
+              We're an AI solutions agency dedicated to helping Canadian
+              businesses harness the power of artificial intelligence. We don't
+              just build AI systems—we build{" "}
+              <span className="text-cyan-400">growth engines</span>.
             </p>
             <p className="text-gray-400 mb-8 leading-relaxed">
-              Our mission is to make AI accessible, affordable, and effective for
-              small and mid-sized businesses. From real estate to healthcare, from
-              local services to e-commerce, we tailor intelligent solutions that
-              save time, reduce costs, and drive conversions.
+              Our mission is to make AI accessible, affordable, and effective
+              for small and mid-sized businesses. From real estate to
+              healthcare, from local services to e-commerce, we tailor
+              intelligent solutions that save time, reduce costs, and drive
+              conversions.
             </p>
 
             <div className="space-y-4">
@@ -112,9 +124,12 @@ export default function Index() {
                   <CheckCircle size={16} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-white mb-1">Built for Results</h3>
+                  <h3 className="font-semibold text-white mb-1">
+                    Built for Results
+                  </h3>
                   <p className="text-gray-400 text-sm">
-                    Every solution is designed to increase revenue and efficiency.
+                    Every solution is designed to increase revenue and
+                    efficiency.
                   </p>
                 </div>
               </div>
@@ -128,7 +143,8 @@ export default function Index() {
                     Reliable & Trustworthy
                   </h3>
                   <p className="text-gray-400 text-sm">
-                    We prioritize security, reliability, and transparent communication.
+                    We prioritize security, reliability, and transparent
+                    communication.
                   </p>
                 </div>
               </div>
@@ -166,7 +182,8 @@ export default function Index() {
             Our Services
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Three core AI solutions designed to transform your business operations
+            Three core AI solutions designed to transform your business
+            operations
           </p>
         </div>
 
@@ -207,7 +224,10 @@ export default function Index() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="section-container bg-gradient-to-b from-background via-background to-white/5">
+      <section
+        id="how-it-works"
+        className="section-container bg-gradient-to-b from-background via-background to-white/5"
+      >
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             How It Works
@@ -314,7 +334,9 @@ export default function Index() {
               <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500/20 to-purple-500/20 flex items-center justify-center mb-4">
                 <CheckCircle className="text-cyan-400" size={24} />
               </div>
-              <h3 className="text-lg font-bold text-white mb-3">{item.title}</h3>
+              <h3 className="text-lg font-bold text-white mb-3">
+                {item.title}
+              </h3>
               <p className="text-gray-400">{item.description}</p>
             </div>
           ))}
@@ -406,7 +428,8 @@ export default function Index() {
             Ready to Scale Your Business?
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8">
-            See how AI can transform your operations with a personalized demo tailored to your business.
+            See how AI can transform your operations with a personalized demo
+            tailored to your business.
           </p>
           <button
             onClick={() =>

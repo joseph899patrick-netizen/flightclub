@@ -44,7 +44,10 @@ export default function ServiceCard({
       {/* CTA */}
       <button className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold transition-colors group/btn">
         Learn More
-        <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
+        <ArrowRight
+          size={16}
+          className="group-hover/btn:translate-x-1 transition-transform"
+        />
       </button>
     </div>
   );
