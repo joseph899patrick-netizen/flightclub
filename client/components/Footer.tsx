@@ -75,11 +75,11 @@ export default function Footer() {
               Have questions? We'd love to hear from you.
             </p>
             <a
-              href="mailto:hello@sitebetter.ca"
+              href="mailto:sitebetter.net@gmail.com"
               className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium"
             >
               <Mail size={16} />
-              hello@sitebetter.ca
+              sitebetter.net@gmail.com
             </a>
           </div>
         </div>
