@@ -10,9 +10,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-lg"></div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4e1baef34cda475296e1cbe44b780b8d%2F295da384711940e8b2ae76136eee41c1?format=webp&width=800&height=1200"
+                alt="sitebetter"
+                className="h-10 w-10 object-contain"
+              />
               <span className="text-lg font-bold text-white">
-                site<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">better</span>
+                sitebetter
               </span>
             </div>
             <p className="text-gray-400 text-sm">
