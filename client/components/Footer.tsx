@@ -12,10 +12,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-lg"></div>
               <span className="text-lg font-bold text-white">
-                AI
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-                  Pro
-                </span>
+                site<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">better</span>
               </span>
             </div>
             <p className="text-gray-400 text-sm">
@@ -28,26 +25,17 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Product</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a
-                  href="#services"
-                  className="hover:text-cyan-400 transition-colors"
-                >
+                <a href="#services" className="hover:text-cyan-400 transition-colors">
                   Services
                 </a>
               </li>
               <li>
-                <a
-                  href="#how-it-works"
-                  className="hover:text-cyan-400 transition-colors"
-                >
+                <a href="#how-it-works" className="hover:text-cyan-400 transition-colors">
                   How It Works
                 </a>
               </li>
               <li>
-                <a
-                  href="#industries"
-                  className="hover:text-cyan-400 transition-colors"
-                >
+                <a href="#industries" className="hover:text-cyan-400 transition-colors">
                   Industries
                 </a>
               </li>
@@ -59,18 +47,12 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a
-                  href="#about"
-                  className="hover:text-cyan-400 transition-colors"
-                >
+                <a href="#about" className="hover:text-cyan-400 transition-colors">
                   About
                 </a>
               </li>
               <li>
-                <a
-                  href="#contact"
-                  className="hover:text-cyan-400 transition-colors"
-                >
+                <a href="#contact" className="hover:text-cyan-400 transition-colors">
                   Contact
                 </a>
               </li>
