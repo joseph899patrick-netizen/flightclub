@@ -18,15 +18,64 @@ import IndustryCard from "@/components/IndustryCard";
 import Footer from "@/components/Footer";
 
 export default function Index() {
-  const [email, setEmail] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    businessName: "",
+    message: "",
+  });
   const [formMessage, setFormMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const contactRef = useRef<HTMLDivElement>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormMessage("Thank you! We'll be in touch soon.");
-    setEmail("");
-    setTimeout(() => setFormMessage(""), 5000);
+    setIsLoading(true);
+    setFormMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setFormMessage(
+          "✓ Thank you! We've received your message and will be in touch within 24 hours."
+        );
+        setFormData({
+          name: "",
+          email: "",
+          businessName: "",
+          message: "",
+        });
+        setTimeout(() => setFormMessage(""), 7000);
+      } else {
+        setFormMessage(
+          data.message || "Failed to send message. Please try again."
+        );
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setFormMessage(
+        "Failed to send message. Please try again later or email us directly."
+      );
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
