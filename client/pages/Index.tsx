@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import {
   MessageSquare,
   Zap,
