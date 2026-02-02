@@ -15,9 +15,7 @@ export default function Footer() {
                 alt="sitebetter"
                 className="h-10 w-10 object-contain"
               />
-              <span className="text-lg font-bold text-white">
-                sitebetter
-              </span>
+              <span className="text-lg font-bold text-white">sitebetter</span>
             </div>
             <p className="text-gray-400 text-sm">
               Empowering businesses with intelligent AI solutions.
@@ -29,17 +27,26 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Product</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#services" className="hover:text-cyan-400 transition-colors">
+                <a
+                  href="#services"
+                  className="hover:text-cyan-400 transition-colors"
+                >
                   Services
                 </a>
               </li>
               <li>
-                <a href="#how-it-works" className="hover:text-cyan-400 transition-colors">
+                <a
+                  href="#how-it-works"
+                  className="hover:text-cyan-400 transition-colors"
+                >
                   How It Works
                 </a>
               </li>
               <li>
-                <a href="#industries" className="hover:text-cyan-400 transition-colors">
+                <a
+                  href="#industries"
+                  className="hover:text-cyan-400 transition-colors"
+                >
                   Industries
                 </a>
               </li>
@@ -51,12 +58,18 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#about" className="hover:text-cyan-400 transition-colors">
+                <a
+                  href="#about"
+                  className="hover:text-cyan-400 transition-colors"
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-cyan-400 transition-colors">
+                <a
+                  href="#contact"
+                  className="hover:text-cyan-400 transition-colors"
+                >
                   Contact
                 </a>
               </li>
