@@ -20,10 +20,7 @@ export default function Header() {
         <Link to="/" className="flex items-center gap-2">
           <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-lg"></div>
           <span className="text-xl font-bold text-white hidden sm:inline">
-            AI
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-              Pro
-            </span>
+            site<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">better</span>
           </span>
         </Link>
 
