@@ -487,10 +487,10 @@ export default function Index() {
             </div>
             <h3 className="font-bold text-white mb-2">Email</h3>
             <a
-              href="mailto:hello@sitebetter.ca"
+              href="mailto:sitebetter.net@gmail.com"
               className="text-cyan-400 hover:text-cyan-300 transition-colors"
             >
-              hello@sitebetter.ca
+              sitebetter.net@gmail.com
             </a>
           </div>
 
