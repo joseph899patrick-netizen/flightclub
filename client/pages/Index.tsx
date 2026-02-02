@@ -520,7 +520,10 @@ export default function Index() {
               </label>
               <input
                 type="text"
+                name="name"
                 required
+                value={formData.name}
+                onChange={handleInputChange}
                 className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400/50 transition-colors"
                 placeholder="Your name"
               />
@@ -532,9 +535,10 @@ export default function Index() {
               </label>
               <input
                 type="email"
+                name="email"
                 required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={formData.email}
+                onChange={handleInputChange}
                 className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400/50 transition-colors"
                 placeholder="your@email.com"
               />
@@ -546,7 +550,10 @@ export default function Index() {
               </label>
               <input
                 type="text"
+                name="businessName"
                 required
+                value={formData.businessName}
+                onChange={handleInputChange}
                 className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400/50 transition-colors"
                 placeholder="Your company"
               />
@@ -557,19 +564,30 @@ export default function Index() {
                 How Can We Help?
               </label>
               <textarea
+                name="message"
                 required
                 rows={4}
+                value={formData.message}
+                onChange={handleInputChange}
                 className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400/50 transition-colors resize-none"
                 placeholder="Tell us about your business and what you're looking to achieve..."
               ></textarea>
             </div>
 
-            <button type="submit" className="btn-primary w-full">
-              Send Message
+            <button
+              type="submit"
+              disabled={isLoading}
+              className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isLoading ? "Sending..." : "Send Message"}
             </button>
 
             {formMessage && (
-              <p className="text-center text-green-400 text-sm animate-fade-in">
+              <p
+                className={`text-center text-sm animate-fade-in ${
+                  formMessage.startsWith("✓") ? "text-green-400" : "text-red-400"
+                }`}
+              >
                 {formMessage}
               </p>
             )}
