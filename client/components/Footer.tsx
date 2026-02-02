@@ -83,7 +83,7 @@ export default function Footer() {
         {/* Social Links & Bottom */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {currentYear} AIProCA. All rights reserved.
+            © {currentYear} sitebetter. All rights reserved.
           </p>
 
           <div className="flex gap-4">
