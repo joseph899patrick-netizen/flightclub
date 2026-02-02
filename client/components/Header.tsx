@@ -18,9 +18,13 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-lg"></div>
-          <span className="text-xl font-bold text-white hidden sm:inline">
-            site<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">better</span>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F4e1baef34cda475296e1cbe44b780b8d%2F295da384711940e8b2ae76136eee41c1?format=webp&width=800&height=1200"
+            alt="sitebetter"
+            className="h-10 w-10 object-contain"
+          />
+          <span className="text-lg font-bold text-white hidden sm:inline">
+            sitebetter
           </span>
         </Link>
 
